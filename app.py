@@ -1,4 +1,4 @@
-from ObjectDetector import Detector
+from IMGscanner import Detector
 import io
 from flask import Flask, render_template, request, send_file
 from PIL import Image
