@@ -1,52 +1,101 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <style>
-      .content {
-	  margin: auto;
-	  width: 60%;
-	  padding: 10px;
-      }
-    </style>
-    <title>La_Granja_SA</title>
-  </head>
-  <body>
-    <h1>Digital Recognition</h1>
-    <br>
-    <form action = "/" method = "POST" enctype = "multipart/form-data">
-      <input type="file" name="file" id="File" onclick="MyFun()"/>
-      <br><br>
-      <div class="ok" id="ok" style="display:none">
-	<input id="OK" type="submit" value="Analyze"/>
-      </div>
-      <p id = "GFG_DOWN" style="color:green; font-size: 11px; font-weight: bold;">
-      </p>
-      <script>
-	var down = document.getElementById('GFG_DOWN'); 
-	var file = document.getElementById("File");
-	var Up = document.getElementById("ok")
-	function MyFun() {
-	    if(file.files.length == 0 ){
-		down.innerHTML = "No files selected";
-		Up.style.display = "block";		   
-            } else {
-		Up.style.display = "block";		   
-	    }
-        }
-      </script>
-      <br>
-      <div class="content" style="width:800px; margin:0 auto;">
-      <h3>USAGE:</h3>
-      <h4>1) Please click on "Choose file" button</h4>
-      <h4>2) Upload an image containing an ORANGE fruit (jpg)</h4>
-      <h4>3) click on the button "Analyze".</h4>
-      <br>
-      <p>This Project is a computer technology related to computer vision and image processing that detects and defines objects like an Orange. This program has the ability to classify just one or several objects within a digital image at once.
-Artificial Intelligence has been around for years, but it is becoming more apparent across a range of industries now more than ever before.
-      </p>
-      </div>
-      <br><br>
-<a target="_blank" href="https://www.holbertonschool.com/">Holberton</a>
-    </form>
-  </body>
-</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>granja_soft</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontello.css') }}">
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h1 class="icon-home">Digital Recognition</h1>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="">I'm here</a>
+				<a href="">for decoration</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="banner">
+			<img src="{{ url_for('static', filename='images/banner.jpg') }}">
+			<div class="contenedor">
+				<h2>Object Recognition</h2>
+				<p>optimize the time of selection and packaging.</p>
+				
+		</div>
+		</section>
+
+		<section id="welcome">
+			<h2>Welcome</h2>
+			<p>
+				This Project is a computer technology related to computer vision and image processing that detects and defines objects. This program has the ability to classify just one or several objects within a digital image at once, the main usage is to select and classify ripe fruits by color. Artificial Intelligence has been around for years, but it is becoming more apparent across a range of industries now more than ever before.
+			</p>
+		</section>
+
+		<section id="contenido">
+			<h3>Usage</h3>
+			<div class="contenedor">
+				<article>
+					<img src="{{ url_for('static', filename='images/usage_orange.png') }}">
+					<br>
+					<br>
+					<ol>
+						<li>Please click on "Choose file" button</li>
+						<li>Make sure to upload clear pictures. For a more accurate experience JPG format would be ideal.</li>
+						<li>click on the button "Analyze".</li>
+						
+					</ol>
+					<br>
+					<h4>Let's do it</h4>
+					
+				</article>
+				
+			</div>
+			
+		</section>
+
+		<section id="files">
+			<div class="contenedor">
+				<article>
+				
+					  <form action = "/" method = "POST" enctype = "multipart/form-data">
+					      <input type="file" name="file" id="File" onclick="MyFun()"/>
+					      <br><br>
+					      <div class="ok" id="ok" style="display:none">
+						<input id="OK" type="submit" value="Analyze"/>
+					      </div>
+					      <p id = "GFG_DOWN" style="color:green; font-size: 14px; font-weight: bold;">
+					      </p>
+					      <script>
+						var down = document.getElementById('GFG_DOWN'); 
+						var file = document.getElementById("File");
+						var Up = document.getElementById("ok")
+						function MyFun() {
+						    if(file.files.length == 0 ){
+							down.innerHTML = "No files selected";
+							Up.style.display = "block";		   
+					            } else {
+							Up.style.display = "block";		   
+						    }
+					        }
+					      </script>
+     
+    				</form>
+				</article>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copy">&copy;GranjaSoft 2020</p>
+		</div>
+	</footer>
+
+</body>
+</html>	
