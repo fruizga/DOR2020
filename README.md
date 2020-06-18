@@ -17,14 +17,14 @@ This solution allows farmers to optimize time in their production processes. Wit
 |  `IMGscanner.py`  | manages the selection and identification of objects(based on JSON data)  |
 
 ### How to use
-1-Please click on "Choose file" button
-2-Make sure to upload clear pictures. For a more accurate experience JPG format would be ideal. 
+1-Please click on "Choose file" button <br />
+2-Make sure to upload clear pictures. For a more accurate experience JPG format would be ideal. <br />
 3-click on the button "Analyze".
 
-###Important
+### Important
 Use images containing oranges, since the software has been built only to detect oranges(based on color) in farms. 
 
 ### Authors
-*Faber Ruiz* - [Github](https://github.com/fruizga) || [email](1196@holbertonschool.com)
+*Faber Ruiz* - [Github](https://github.com/fruizga) || 1196@holbertonschool.com
 
-*Jose Diaz* - [Github](https://github.com/jhosep7) || [email](1149@holbertonschool.com)
+*Jose Diaz* - [Github](https://github.com/jhosep7) || 1149@holbertonschool.com
