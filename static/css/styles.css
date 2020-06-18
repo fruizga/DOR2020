@@ -69,6 +69,7 @@ footer .contenedor{
 	padding: 8px;
 	display: flex;
 	height: auto;
+	width: fit-content;
 	
 	
 }
@@ -88,6 +89,7 @@ footer .contenedor{
 	padding: 28px;
 	display: flex;
 	height: auto;
+	width: fit-content;
 		
 }
 }
