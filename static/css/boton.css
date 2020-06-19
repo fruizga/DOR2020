@@ -1,35 +1,23 @@
-.jum {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #1b6005;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 22px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.jum span {
-  cursor: pointer;
-  display: inline-block;
+.upload-btn-wrapper {
   position: relative;
-  transition: 0.5s;
+  overflow: hidden;
+  display: inline-block;
 }
-.jum span:after {
-content: '\00bb';  /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
-position: absolute;
-  opacity: 0;
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #22781E;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
   top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.jum:hover span {
-  padding-right: 25px;
-}
-.jum:hover span:after {
-  opacity: 1;
-  right: 0;
+  opacity: 0;
 }

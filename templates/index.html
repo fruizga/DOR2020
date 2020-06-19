@@ -45,7 +45,7 @@
 						<br>
 						<br>
 						<ol>
-							<li>Please click on "Choose file" button</li>
+							<li>Please click on "Upload file" button</li>
 							<li>Be sure to upload pictures of oranges in JPG format.</li>
 							<li>click on the button "Analyze".</li>
 							
@@ -62,10 +62,13 @@
 						<br>
 						<br>
 						<form action = "/" method = "POST" enctype = "multipart/form-data">
-						      <input class="jum" type="file" name="file" id="File" onclick="MyFun()"/>
+							<div class="upload-btn-wrapper">
+								<button class="btn">Upload a file</button>
+							<input class="jum" type="file" name="file" id="File" onclick="MyFun()"/>
+							</div>
 						      <br><br>
 						      <div class="ok" id="ok" style="display:none">
-							<input class="jum" id="OK" type="submit" value="Analyze"/>
+							<input class="btn" id="OK" type="submit" value="Analyze"/>
 						      </div>
 						      <p id = "GFG_DOWN" style="color:green; font-size: 14px; font-weight: bold;">
 						      </p>
