@@ -6,12 +6,12 @@ from PIL import Image
 app = Flask(__name__)
 Scanner = Detector()
 
-
+""" render index.html with a get method """
 @app.route("/", methods=['GET'])
 def index():
     return render_template('index.html')
 
-
+"""function to upload image and process it"""
 @app.route("/", methods=['POST'])
 def upload():
     if request.method == 'POST':

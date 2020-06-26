@@ -4,13 +4,13 @@ import numpy
 
 MyDict = {55: ''}
 
-
+"""class that detects number of objects"""
 class Detector:
     def __init__(self):
         global cvNet
         cvNet = cv.dnn.readNetFromTensorflow('model/FaberModel.pb',
                                              'model/FaberModelCoco.pbtxt')
-
+    """function that detects and analyze the image uploaded"""
     def detectObject(self, imName):
         img = cv.cvtColor(numpy.array(imName), cv.COLOR_BGR2RGB)
         cvNet.setInput(cv.dnn.blobFromImage(img, 0.007843, (300, 300), (127.5, 127.5, 127.5), swapRB=True, crop=False))
