@@ -1,4 +1,7 @@
 # Digital Object Recognition
+
+![alt tag](static/images/usage_orange.png)
+
 ### Description
 It is a software solution, based on AI, using computer vision and image processing that detects and defines objects.
 
@@ -22,7 +25,7 @@ This solution allows farmers to optimize time in their production processes. Wit
 3-click on the button "Analyze".
 
 ### Important
-Use images containing oranges, since the software has been built only to detect oranges(based on color) in farms. 
+Use images containing oranges, since the software has been built only to detect oranges(based on color) in farms.
 
 ### Authors
 *Faber Ruiz* - [Github](https://github.com/fruizga) || 1196@holbertonschool.com
